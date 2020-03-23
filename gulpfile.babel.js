@@ -22,7 +22,7 @@ export const clean = () => del(['dist']);
 const server = browserSync.create();
 export const serve = done => {
     server.init({
-        proxy: "http://localhost/wordpress" // put your local website link here
+        proxy: "http://localhost/custom_wordpress_theme" // put your local website link here
     });
     done();
 };

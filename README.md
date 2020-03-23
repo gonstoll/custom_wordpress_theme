@@ -1,6 +1,21 @@
 # Custom WordPress theme, by Gonzalo Stoll
 
-To kickstart this theme stylesheet, run `sass --watch assets/scss/theme.scss:style.css`.
+# Requirements
+* [NodeJS](https://nodejs.org/)
+* [npm](https://www.npmjs.com/get-npm)
+* [Gulp](https://gulpjs.com/docs/en/getting-started/quick-start)
+* Local server environment
+    * [MAMP for Mac](https://www.mamp.info/en/mac/)
+    * [MAMP for Windows](https://www.mamp.info/en/windows/)
+
+## Start
+From the theme folder, run `npm install` to install all dependencies.
+
+### Development
+From the theme folder, run `npm start` to serve on dev mode. This will serve up the website on `http://localhost:3000/custom_wordpress_theme`. Make the repository folder is on the root of the `htdocs` folder, and the Server environment is running.
+
+### Build for production
+Run `npm run build` to bundle it for production.
 
 
 This theme has support for:
@@ -17,8 +32,6 @@ This theme has support for:
 
 * Aos plugin (animate on scroll)
 
-* Back to top animation
-
 * Logo uploader
 
 * Social media icons
@@ -26,7 +39,5 @@ This theme has support for:
 * Fontawesome 5
 
 * Easing
-
-* Anchor menu
 
 * LazyLoad
