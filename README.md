@@ -12,13 +12,12 @@
 From the theme folder, run `npm install` to install all dependencies.
 
 ### Development
-From the theme folder, run `npm start` to serve on dev mode. This will serve up the website on `http://localhost:3000/custom_wordpress_theme`. Make the repository folder is on the root of the `htdocs` folder, and the Server environment is running.
+From the theme folder, run `npm start` to serve on dev mode. This will serve up the website on `http://localhost:3000/custom_wordpress_theme`. To see it work, put the repository folder into the WordPress `themes` folder. Make sure the WordPress folder is on the root of the `htdocs` folder, and the Server environment is running.
 
 ### Build for production
 Run `npm run build` to bundle it for production.
 
-
-This theme has support for:
+#### This theme has support for:
 
 * Thumbnails
 
