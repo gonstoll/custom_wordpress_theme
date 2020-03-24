@@ -4,7 +4,7 @@
 * [NodeJS](https://nodejs.org/)
 * [npm](https://www.npmjs.com/get-npm)
 * [Gulp](https://gulpjs.com/docs/en/getting-started/quick-start)
-* Local server environment
+* WordPress running on local server environment
     * [MAMP for Mac](https://www.mamp.info/en/mac/)
     * [MAMP for Windows](https://www.mamp.info/en/windows/)
 
@@ -12,7 +12,12 @@
 From the theme folder, run `npm install` to install all dependencies.
 
 ### Development
-From the theme folder, run `npm start` to serve on dev mode. This will serve up the website on `http://localhost:3000/custom_wordpress_theme`. To see it work, put the repository folder into the WordPress `themes` folder. Make sure the WordPress folder is on the root of the `htdocs` folder, and the Server environment is running.
+To see it work, you must:
+
+* Put the repository folder into the WordPress `themes` folder
+* Go to the `gulpfile.babel.js` file, and rename the **proxy** url with the url of your site
+* Start the local server environment
+* From the theme folder, run `npm start` to serve on dev mode
 
 ### Build for production
 Run `npm run build` to bundle it for production.
