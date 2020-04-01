@@ -24,24 +24,26 @@ Run `npm run build` to bundle it for production.
 
 #### This theme has support for:
 
-* Thumbnails
-
-* Primary menu
-
-* Custom post type
-
 * jQuery
 
 * Bootstrap
 
 * Aos plugin (animate on scroll)
 
-* Logo uploader
-
-* Social media icons
-
 * Fontawesome 5
 
 * Easing
 
 * LazyLoad
+
+* Woocommerce
+
+* Thumbnails
+
+* Primary menu
+
+* Portfolio custom post type
+
+* Logo uploader
+
+* Social media icons
