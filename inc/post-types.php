@@ -22,7 +22,7 @@
             'rewrite'            => array( 'slug' => 'portfolio' ),
             'taxonomies'         => array( 'category' ),
         );
-        register_post_type( 'foo_portfolio', $args );
+        register_post_type( 'theme_portfolio', $args );
     };
 
 ?>
