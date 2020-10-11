@@ -1,14 +1,14 @@
 <?php
-
     // Enqueue assets
-    add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
-    function my_theme_enqueue_styles() {
+    add_action( 'wp_enqueue_scripts', 'enqueue_theme_assets' );
+    function enqueue_theme_assets() {
+        // Styles
+        wp_enqueue_style( 'theme-info', get_stylesheet_directory_uri() . '/style.css', '', true );
+        wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/dist/css/app.css', '', true );
 
-        wp_enqueue_style(  'theme-info', get_stylesheet_directory_uri() . '/style.css' );
-        wp_enqueue_style(  'theme-style', get_stylesheet_directory_uri() . '/dist/css/bundle.css' );
-        wp_enqueue_script( 'theme-js', get_template_directory_uri() . '/dist/js/bundle.js', array( 'jquery' ), '', true );
-        wp_enqueue_script( 'easing', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', array( 'jquery' ),'',true );
-        
+        // Scripts
+        wp_enqueue_script( 'theme-js', get_template_directory_uri() . '/dist/js/app.js', array( 'jquery' ), '', true );
+        wp_enqueue_script( 'easing', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', array('jquery'), '', true );
     }
 
     // Add feature image support
@@ -49,5 +49,3 @@
         add_theme_support( 'woocommerce' );
     }
     add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
-
-?>

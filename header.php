@@ -9,11 +9,9 @@
         <?php wp_head();?>
     </head>
     <body>
-        
         <header>
 
             <nav class="navbar navbar-expand-md">
-                
                 <?php if ( get_theme_mod( 'site_logo' ) ): ?>
                     <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' )); ?>">
                         <img src="<?php echo esc_attr(get_theme_mod( 'site_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
@@ -37,7 +35,6 @@
                         'add_a_class'     => 'nav-link'
                     ));
                 ?>
-                
             </nav>
 
             <?php if ( get_theme_mod( 'twitter' ) ): ?>

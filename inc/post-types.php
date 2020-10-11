@@ -1,5 +1,4 @@
 <?php
-
     // Portfolio post type
     add_action( 'init', 'cpt_work' );
     function cpt_work() {
@@ -24,5 +23,3 @@
         );
         register_post_type( 'theme_portfolio', $args );
     };
-
-?>

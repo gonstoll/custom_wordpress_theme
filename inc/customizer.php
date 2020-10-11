@@ -1,6 +1,5 @@
 <?php
-
-    //Logo
+    // Logo
     function site_logo( $wp_customize ){
         //Settings
         $wp_customize->add_setting( 'site_logo' );//Setting for logo uploader
@@ -107,8 +106,5 @@
                 )
             )
         );
-        
     }
     add_action('customize_register', 'social_media');
-
-?>

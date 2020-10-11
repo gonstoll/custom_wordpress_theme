@@ -1,11 +1,13 @@
 {
-  "name": "gonzalo-stoll-wordpress-theme",
-  "version": "1.0.0",
+  "name": "custom_wordpress_theme",
+  "version": "2.0.0",
   "description": "Custom WordPress theme",
-  "main": "gulpfile.babel.js",
+  "main": "index.js",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build --prod"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --mode=development",
+    "build": "webpack --mode=production --optimize-minimize",
+    "build:dev": "webpack --mode=development"
   },
   "repository": {
     "type": "git",
@@ -13,37 +15,35 @@
   },
   "author": "Gonzalo Stoll",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
-    "@babel/register": "^7.8.6",
-    "autoprefixer": "^9.7.4",
-    "babel-loader": "^8.0.6",
-    "browser-sync": "^2.26.7",
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-postcss": "^8.0.0",
-    "gulp-replace": "^1.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-wp-pot": "^2.3.6",
-    "gulp-zip": "^5.0.1",
-    "vinyl-named": "^1.1.0",
-    "webpack-stream": "^5.2.1",
-    "yargs": "^15.3.1"
-  },
   "bugs": {
     "url": "https://github.com/gonstoll/custom_wordpress_theme/issues"
   },
   "homepage": "https://github.com/gonstoll/custom_wordpress_theme#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.12",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.1",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "mini-css-extract-plugin": "^1.0.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^4.2.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
+  },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0",
-    "aos": "^2.3.4",
-    "bootstrap": "^4.4.1",
-    "lazyload": "^2.0.0-rc.2",
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@popperjs/core": "^2.5.2",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
 }
